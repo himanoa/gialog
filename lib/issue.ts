@@ -64,7 +64,7 @@ export async function listIssueComments({
       };
     })
   );
-  return issue_comments.sort(byCreatedAt).reverse();
+  return issue_comments.sort(byCreatedAt);
 }
 
 function byCreatedAt(a: any, b: any) {
